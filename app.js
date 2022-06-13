@@ -10,6 +10,8 @@ const session = require("express-session");
 const axios = require("axios");
 require("dotenv").config();
 
+const port = process.env.PORT || 3000;
+
 const app = express();
 app.use(express.static(__dirname + "/public"));
 app.set("view engine", "ejs");
